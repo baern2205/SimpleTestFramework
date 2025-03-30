@@ -46,4 +46,5 @@ tasks.register('runAll', Test) {
     useJUnitPlatform()
     systemProperty 'browser', 'chrome'
     systemProperty 'cucumber.filter.tags', '@SomeTag'
+    systemProperty 'cucumber.plugin', 'pretty, html:build/reports/cucumber-report.html, json:build/reports/cucumber.json'
 }
